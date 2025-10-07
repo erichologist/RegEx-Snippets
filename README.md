@@ -14,12 +14,12 @@ Useful RegEx snippets that are categorized and searchable (see below)
   * Match image filenames
 * [Miscellaneous](#miscellaneous)
   * Match city, state abbreviation
+  * Match everything from start to end of a string
   * Match credit cards
   * Match email addresses
   * Match US Phone Numbers
   * Match valid hexadecimal colors
   * Match social security number
-  * Match everything from start to end of a string
   * Match ZIP Codes (5 digit and 9 digit)
 * [Numbers](#numbers)
   * Match dollar signs and comma separators in a number
