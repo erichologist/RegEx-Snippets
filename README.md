@@ -19,6 +19,7 @@ Useful RegEx snippets that are categorized and searchable (see below)
   * Match US Phone Numbers
   * Match valid hexadecimal colors
   * Match social security number
+  * Match everything from start to end of a string
   * Match ZIP Codes (5 digit and 9 digit)
 * [Numbers](#numbers)
   * Match dollar signs and comma separators in a number
@@ -75,19 +76,18 @@ Accepts month names (both full and abbreviated), and doesn't care about case. Fo
 /[a-zA-Z\s]*, [A-Z][A-Z]/
 ```
 
-**Match Everything From Start To End Of A String**  
-Matches ###-##-####
+**Match Everything From Start To End Of A String** 
 ```
 /^substring₁.*substring₂$/
 ```
-  `^substring₁.*substring₂$` means *match, from beginning to end, any character that appears zero or more times*. That is, match everything from the start to the end of the string. 
-  - **Example**
-    - I have two strings:
+> `^substring₁.*substring₂$` means *match, from beginning to end, any character that appears zero or more times*. That is, match everything from the start to the end of the string. 
+  **Example**
+    I have two strings:
       1. The brush of Arica Zea
       2. Arica's last name is Zea.
 
-    > The pattern ^Arica.*Zea$ will match 2. Arica's last name is Zea. 
-    > The pattern says - the string should start with Arica and end with Zea and there can be zero or more characters (any characters) in between them.
+    >> The pattern ^Arica.*Zea$ will match 2. Arica's last name is Zea. 
+    >> The pattern says - the string should start with Arica and end with Zea and there can be zero or more characters (any characters) in between them.
 
 **Match credit cards** (Make sure to strip the string of all commas, spaces, etc. before matching)  
 Amex:
